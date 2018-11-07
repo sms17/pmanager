@@ -14,7 +14,7 @@ const taskRouter = require('./routes/tasks');
 const parentRouter = require('./routes/parents');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/pmdb').then(
+mongoose.connect('mongodb://mongo:27017/pmdb').then(
   () => {console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
