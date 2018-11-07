@@ -9,4 +9,5 @@ RUN npm install grunt-shell
 RUN npm install grunt-nodemon
 COPY . .
 EXPOSE 4000
+EXPOSE 27017
 CMD [ "grunt" ]
