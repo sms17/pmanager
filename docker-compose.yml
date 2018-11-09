@@ -6,7 +6,7 @@ services:
     ports:
         - 27017:27017
     command: mongod --noauth
-  webapp:
+  meanapp:
     build: .
     image: sms17/pmmanager:latest
     depends_on:
